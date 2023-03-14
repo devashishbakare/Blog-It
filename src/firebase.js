@@ -1,7 +1,7 @@
-import firebase from "firebase/app";
-import "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
-
+// TODO: Replace the following with your app's Firebase project configuration
+// See: https://support.google.com/firebase/answer/7015592
 const firebaseConfig = {
   apiKey: "AIzaSyAKYfzDNHj4YNGJsRevc5Dea7LRF9sVLvQ",
   authDomain: "blog-it-670ba.firebaseapp.com",
@@ -10,7 +10,9 @@ const firebaseConfig = {
   messagingSenderId: "127920942710",
   appId: "1:127920942710:web:021647f5160a21bbc6b957"
 };
-
-
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const firestore = firebase.firestore();
+
+
+// Initialize Cloud Firestore and get a reference to the service
+export const db = getFirestore(app);
