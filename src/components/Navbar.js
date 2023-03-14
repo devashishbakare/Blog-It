@@ -1,6 +1,16 @@
+import {Link} from "react-router-dom";
 function Navbar() {
     return(
-        <div className=""><p>Navbar</p></div>
+        <div className="">
+            <ul id = "nav">
+                <li>
+                    <Link to ="/">Home</Link>
+                </li>
+                <li>
+                    <Link to ="/createPost">Create Post</Link>
+                </li>
+            </ul>
+        </div>
     );
   }
   
