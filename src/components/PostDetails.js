@@ -1,5 +1,11 @@
 function PostDetails() {
-  return <div className="">PostDetail</div>;
+  return(
+    <>
+     <div className="">
+        <p>yet to add</p>
+      </div>
+    </>
+  );
 }
 
 export default PostDetails;
