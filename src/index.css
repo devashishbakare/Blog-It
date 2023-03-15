@@ -16,6 +16,14 @@ code {
   width: 800px;
   margin: 0 auto;
 }
+.home{
+  margin : 3%;
+  margin-top : 1%
+}
+.create-post{
+  margin : 7%;
+  margin-top : 3%
+}
 .home h1 {
   text-align: center;
   color: #2196f3;
